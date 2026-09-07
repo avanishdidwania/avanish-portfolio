@@ -1,9 +1,10 @@
 import React from 'react';
 
-export default function X() {
+export default function X({ className }: { className?: string }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
       fill="currentColor"
       viewBox="0 0 256 256"
     >

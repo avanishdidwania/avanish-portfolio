@@ -1,69 +1,54 @@
-'use client';
-
 import SectionTitle from '../common/SectionTitle';
+import X from '../svgs/X';
+import ArrowUpRight from '../svgs/ArrowUpRight';
 import { Link } from 'next-view-transitions';
-import { useEffect, useRef } from 'react';
 
 const TWITTER_USERNAME = 'AvanishDid92442';
 
 export default function TwitterFeed() {
-  const containerRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    // Load Twitter widget script
-    const script = document.createElement('script');
-    script.src = 'https://platform.twitter.com/widgets.js';
-    script.async = true;
-    script.charset = 'utf-8';
-    document.body.appendChild(script);
-
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
+  const profileUrl = `https://x.com/${TWITTER_USERNAME}`;
 
   return (
     <section className="pb-10">
       <SectionTitle>Building in Public</SectionTitle>
 
-      <div className="flex flex-col gap-4 px-6 pt-6">
-        <p className="text-muted-foreground text-sm">
-          I share my progress, learnings, and thoughts on{' '}
-          <Link
-            href={`https://x.com/${TWITTER_USERNAME}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-foreground underline-offset-4 hover:underline"
-          >
-            X (Twitter)
-          </Link>
-          . Follow along for real-time updates on what I&apos;m building.
-        </p>
-
-        <div
-          ref={containerRef}
-          className="overflow-hidden rounded-xl border border-[var(--dashed-border)]"
+      <div className="px-6 pt-6">
+        <Link
+          href={profileUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group card-flat-interactive flex items-center gap-4 px-5 py-5"
         >
-          <a
-            className="twitter-timeline"
-            data-theme="dark"
-            data-chrome="noheader nofooter noborders transparent"
-            data-height="400"
-            data-dnt="true"
-            href={`https://twitter.com/${TWITTER_USERNAME}`}
-          >
-            Loading tweets...
-          </a>
-        </div>
+          <div className="bg-muted flex size-12 shrink-0 items-center justify-center rounded-full">
+            <X className="size-5 text-foreground" />
+          </div>
 
-        <div className="text-center">
+          <div className="flex min-w-0 flex-1 flex-col gap-0.5">
+            <div className="flex items-center gap-2">
+              <h3 className="text-sm font-semibold text-foreground">
+                @{TWITTER_USERNAME}
+              </h3>
+              <span className="rounded-full border border-[var(--dashed-border)] px-2 py-0.5 text-[10px] text-muted-foreground">
+                on X
+              </span>
+            </div>
+            <p className="text-sm text-muted-foreground">
+              I post what I ship, break, and learn — follow along for real-time
+              updates on what I&apos;m building.
+            </p>
+          </div>
+
+          <ArrowUpRight className="size-4 shrink-0 text-muted-foreground transition-colors group-hover:text-foreground" />
+        </Link>
+
+        <div className="mt-4 flex justify-center">
           <Link
-            href={`https://x.com/${TWITTER_USERNAME}`}
+            href={profileUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-xs text-muted-foreground transition-colors hover:text-foreground"
+            className="view-all-btn"
           >
-            Follow me on X →
+            Follow on X
           </Link>
         </div>
       </div>
