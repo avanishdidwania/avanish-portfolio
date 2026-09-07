@@ -46,11 +46,11 @@ export const githubConfig = {
   // Theme configuration for dark and light modes
   theme: {
     dark: [
-      'rgb(30, 30, 30)',   // Level 0 — near-black background
-      'rgb(80, 80, 80)',   // Level 1 — dark gray
-      'rgb(130, 130, 130)', // Level 2 — medium gray
-      'rgb(190, 190, 190)', // Level 3 — light gray
-      'rgb(240, 240, 240)', // Level 4 — near-white
+      'rgb(38, 38, 38)',    // Level 0 — empty (subtle, visible on dark bg)
+      'rgb(95, 95, 95)',    // Level 1 — low
+      'rgb(140, 140, 140)', // Level 2 — medium
+      'rgb(195, 195, 195)', // Level 3 — high
+      'rgb(245, 245, 245)', // Level 4 — max (near-white)
     ],
     light: [
       'rgb(235, 235, 235)', // Level 0 — very light gray

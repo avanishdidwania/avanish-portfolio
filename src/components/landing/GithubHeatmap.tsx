@@ -25,7 +25,10 @@ export default function GithubHeatmap() {
   const [totalContributions, setTotalContributions] = useState<number>(0);
   const [isLoading, setIsLoading] = useState(true);
   const [hasError, setHasError] = useState(false);
-  const { theme } = useTheme();
+  // `resolvedTheme` gives the actual applied theme ('dark'/'light'),
+  // resolving 'system' correctly. Using `theme` alone would leave it as
+  // 'system' and wrongly fall back to the light color scheme.
+  const { resolvedTheme } = useTheme();
 
   useEffect(() => {
     async function fetchData() {
@@ -105,7 +108,7 @@ export default function GithubHeatmap() {
           blockSize={10}
           blockMargin={3}
           fontSize={githubConfig.fontSize}
-          colorScheme={theme === 'dark' ? 'dark' : 'light'}
+          colorScheme={resolvedTheme === 'light' ? 'light' : 'dark'}
           maxLevel={githubConfig.maxLevel}
           hideTotalCount={true}
           hideColorLegend={true}
@@ -136,9 +139,9 @@ export default function GithubHeatmap() {
               className="inline-block size-2.5 rounded-sm"
               style={{
                 backgroundColor:
-                  theme === 'dark'
-                    ? (githubConfig.theme.dark?.[level] ?? '#161b22')
-                    : (githubConfig.theme.light?.[level] ?? '#ebedf0'),
+                  resolvedTheme === 'light'
+                    ? (githubConfig.theme.light?.[level] ?? '#ebedf0')
+                    : (githubConfig.theme.dark?.[level] ?? '#161b22'),
               }}
             />
           ))}
