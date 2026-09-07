@@ -64,8 +64,8 @@ export const pageMetadata: Record<string, PageMeta> = {
     description:
       "Get in touch with me for collaborations, projects, or opportunities. I'd love to hear from you!",
     keywords: ['contact', 'hire', 'collaboration', 'internship', 'developer'],
-    ogImage: '/assets/logo.png',
-    twitterCard: 'summary',
+    ogImage: '/meta/hero.png',
+    twitterCard: 'summary_large_image',
   },
 
   // Work Experience page
@@ -80,7 +80,7 @@ export const pageMetadata: Record<string, PageMeta> = {
       'ai engineer',
       'genai intern',
     ],
-    ogImage: '/meta/work.png',
+    ogImage: '/meta/hero.png',
     twitterCard: 'summary_large_image',
   },
 
@@ -97,7 +97,7 @@ export const pageMetadata: Record<string, PageMeta> = {
       'chrome extension',
       'full-stack',
     ],
-    ogImage: '/meta/projects.png',
+    ogImage: '/meta/hero.png',
     twitterCard: 'summary_large_image',
   },
 
@@ -113,8 +113,8 @@ export const pageMetadata: Record<string, PageMeta> = {
       'qualifications',
       'download',
     ],
-    ogImage: '/meta/resume.png',
-    twitterCard: 'summary',
+    ogImage: '/meta/hero.png',
+    twitterCard: 'summary_large_image',
   },
 
   // Gears page
@@ -123,7 +123,7 @@ export const pageMetadata: Record<string, PageMeta> = {
     description:
       'The devices, software, and tools I use daily as an AI full-stack engineer.',
     keywords: ['gears', 'setup', 'hardware', 'tools', 'workflow'],
-    ogImage: '/meta/gears.png',
+    ogImage: '/meta/hero.png',
     twitterCard: 'summary_large_image',
   },
 
@@ -140,7 +140,7 @@ export const pageMetadata: Record<string, PageMeta> = {
       'settings',
       'developer tools',
     ],
-    ogImage: '/meta/setup.png',
+    ogImage: '/meta/hero.png',
     twitterCard: 'summary_large_image',
   },
 
@@ -149,7 +149,7 @@ export const pageMetadata: Record<string, PageMeta> = {
     title: 'Games I Play',
     description: 'The games I play when not coding.',
     keywords: ['games', 'gaming', 'entertainment'],
-    ogImage: '/meta/blogs.png',
+    ogImage: '/meta/hero.png',
     twitterCard: 'summary_large_image',
   },
 };
