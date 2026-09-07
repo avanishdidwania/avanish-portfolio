@@ -1,0 +1,36 @@
+# Avanish Didwania
+
+> AI Full Stack Engineer — Applied AI, GenAI, RAG pipelines, and Agentic systems.
+
+## About
+
+I build AI systems that separate fact from fiction. Specializing in GenAI, RAG pipelines, and agentic AI — turning LLMs into production tools that verify, retrieve, and reason. Full-stack engineer working with Python, TypeScript, React, and Next.js.
+
+## Links
+
+- GitHub: https://github.com/avanishdidwania
+- LinkedIn: https://www.linkedin.com/in/avanish-didwania/
+- LeetCode: https://leetcode.com/u/avanishdidwania/
+- X: https://x.com/AvanishDid92442
+- Email: avanishdidwania@gmail.com
+
+## Skills
+
+Python, TypeScript, JavaScript, React, Next.js, Node.js, FastAPI, LangChain, LangGraph, Agentic AI, RAG, Docker, PostgreSQL, MongoDB, Supabase (pgvector)
+
+## Experience
+
+- Gen AI Intern — Naviga Technology Solutions (July 2026 – Present, Remote): Content credibility and fact verification. Built NoLie.
+- Open Source Contributor — Submitty / Rensselaer Polytechnic Institute (May 2026, Remote): Fixed a forum notification bug, submitted PR #12868.
+
+## Projects
+
+- NoLie — AI-powered Chrome extension for content credibility and fact verification (LangGraph agent, Deepgram audio fact-checking, self-learning RAG cache, Gemini image detection). 90% accuracy on a 50-claim evaluation set.
+- DocMind — Production-grade RAG document intelligence platform with a skills-based architecture, Auth0 auth (MFA + RBAC), self-correcting hybrid retrieval, and a LangGraph agent with failover.
+- LunarAlign — Multi-modal, illumination-invariant image registration for ISRO Chandrayaan-2 (SIH 2026, sub-pixel accuracy).
+- WeatherGPT — AI-powered conversational weather intelligence platform for India (LangGraph agent, geospatial reasoning, real-time ingestion).
+- Stock Portfolio & Market Analytics — Full-stack MERN financial dashboard with JWT auth and real-time market data.
+
+## Education
+
+- JIS University, West Bengal, India — B.Tech in Computer Science and Engineering (2024 – 2028), CGPA 8.73/10
